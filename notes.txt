@@ -1,0 +1,43 @@
+----------------------------------------------------------------------
+Basic
+----------------------------------------------------------------------
+import and we can use like --> </App> --> jsx
+Return HTML from JS --> JSX [use capital letter in start] --> can be called as Component.
+<> & </> --> can be used to export more than one element.
+ctrl + shift + p --> Select : Reload.
+
+----------------------------------------------------------------------
+01-Counter
+----------------------------------------------------------------------
+state --> Any change in state the UI Reloads.
+
+import { useState } from 'react'
+
+const [counter, setCounter] = useState(0)
+    counter - variable
+    setCounter - function
+    0 - starting (number, string, method etc)
+
+const addValue = () => {
+    setCounter(counter + 1)
+}
+
+const addValue = () => {
+    setCounter( (prevCounter) => prevCounter + 1)
+    setCounter( (prevCounter) => prevCounter + 1)
+    setCounter( (prevCounter) => prevCounter + 1)
+    setCounter( (prevCounter) => prevCounter + 1)
+}
+--> callback gives old counter value.
+
+----------------------------------------------------------------------
+02-Tailwind
+----------------------------------------------------------------------
+
+rfce --> Extention Snippet
+ctrl + space --> Suggestion (intellisence)
+
+npm i --save-dev-exact prettier
+npx prettier --write ./src/components/Card.jsx
+
+Sending values to the Card through props --> If more better do a object
