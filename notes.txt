@@ -43,5 +43,16 @@ npx prettier --write ./src/components/Card.jsx
 Sending values to the Card through props --> If more better do a object
 
 ----------------------------------------------------------------------
-03-
+04-Password Generation
 ----------------------------------------------------------------------
+useCallback --> Hook, to run the same function again and again.
+            --> In dependency array only keep things whch does not change often.
+
+useEffect --> runs once for sure, and also where a value present in dependency array changes.
+
+to write to clipboard -->
+const copyPasswordToClipboard = () => {
+    window.navigator.clipboard.writeText(password)
+  }
+
+useRef --> Grab anything from window.
