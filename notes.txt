@@ -41,3 +41,7 @@ npm i --save-dev-exact prettier
 npx prettier --write ./src/components/Card.jsx
 
 Sending values to the Card through props --> If more better do a object
+
+----------------------------------------------------------------------
+03-
+----------------------------------------------------------------------
