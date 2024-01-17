@@ -58,5 +58,33 @@ const copyPasswordToClipboard = () => {
 useRef --> Grab anything from window.
 
 ----------------------------------------------------------------------
-05
+05-ReactRouter
 ----------------------------------------------------------------------
+npm i react-router-dom
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path='/' element={<Layout/>}>
+      <Route path='' element={<Home/>}/>
+      <Route path='about' element={<About/>}/>
+
+    </Route>
+  )
+)
+
+can be sanvaged --> 
+<Route>
+    <Route/>
+    <Route>
+        <Route/>
+        <Route>
+            ....
+        </Route>
+    </Route>
+</Route>
+
+Passing params -->
+
+<Route path='user/' element={<User/>}>
+    <Route path=':userid' element={<User/>}/>
+</Route>
